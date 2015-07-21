@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Commerce{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+         {% block stylesheets %}
+          {% stylesheets output = 'css/compiled/main.css' filter='cssrewrite' 
+           '@ShoreSiteBundle/Resources/public/css/*'         
+            %}
+             <link rel="stylesheet" href="{{ asset_url }}" />
+           {% endstylesheets %}
+         {% endblock %}
+        
+        {% javascripts '@ShoreSiteBundle/Resources/public/js/*' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="w3-container teal">
+        <h1>WatanShop</h1>
+        <nav class="w3-topnav w3-theme">
+            <a href="/default.asp">Home</a>
+            <a href="/html/default.asp">HTML</a>
+            <a href="/css/default.asp">CSS</a>
+            <a href="/js/default.asp">JavaScript</a>
+            <a href="/w3css/default.asp">W3.CSS</a>
+        </nav>
+        </div>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <footer class="w3-container teal">
+            <h5>Copyright</h5>
+        </footer> 
+    </body>
+</html>

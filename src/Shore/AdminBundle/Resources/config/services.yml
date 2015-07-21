@@ -1,0 +1,4 @@
+services:
+#    shore_admin.example:
+#        class: Shore\AdminBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

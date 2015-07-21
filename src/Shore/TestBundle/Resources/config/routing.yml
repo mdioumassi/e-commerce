@@ -1,0 +1,8 @@
+shore_test_homepage:
+    path:     /
+    defaults: { _controller: ShoreTestBundle:Default:index }
+
+
+shore_test_produits:
+    path:     /produit
+    defaults: { _controller: ShoreTestBundle:Default:produits }

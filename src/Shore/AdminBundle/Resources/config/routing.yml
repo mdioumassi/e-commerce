@@ -1,0 +1,7 @@
+shore_admin_produit:
+    resource: "@ShoreAdminBundle/Resources/config/routing/produit.yml"
+    prefix:   /produit
+
+shore_admin_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ShoreAdminBundle:Default:index }

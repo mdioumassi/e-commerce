@@ -1,0 +1,13 @@
+shore_test:
+    resource: "@ShoreTestBundle/Resources/config/routing.yml"
+    prefix:   /test
+
+shore_admin:
+    resource: "@ShoreAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+shore_site:
+    resource: "@ShoreSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
